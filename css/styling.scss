@@ -17,7 +17,7 @@ $white: #fff;
 }
 
 body {
-  font-family: 'Roboto Light', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   display: flex;
@@ -99,7 +99,7 @@ body {
 // The Dot //
 @keyframes dotMove {
   0%, 100% {
-    transform: rotate(180deg) translate(-120px, -10px) rotate(-180deg);
+    transform: rotate(180deg) translate(-103px, -10px) rotate(-180deg);
   }
   50% {
     transform: rotate(0deg) translate(-111px, 10px) rotate(0deg);
@@ -151,15 +151,15 @@ body {
     transform: scaleY(0.18);
   }
 }
-//
-//@media(min-width: 48rem) {
-//  #container {
-//    transform: scale(0.725);
-//  }
-//}
-//
-//@media(min-width: 62rem) {
-//  #container {
-//    transform: scale(0.85);
-//  }
-//}
+
+@media(min-width: 48rem) {
+  #container {
+    transform: scale(0.725);
+  }
+}
+
+@media(min-width: 62rem) {
+  #container {
+    transform: scale(0.85);
+  }
+}
