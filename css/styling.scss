@@ -86,33 +86,44 @@ body {
       }
     }
     &:nth-child(5) {
-      transform-origin: 100% 70%;
+      transform-origin: 100% 80%;
       animation: letterStretch 1800ms cubic-bezier(0.25, 0.25, 0.75, 0.75) infinite;
       &::before {
         @include pseudo;
         top: 15px;
         left: 2px;
         width: 9px;
-        height: 15px;
+        height: 18px;
         background: $white;
       }
     }
+    &:nth-child(7) {
+      transform-origin: 50%;
+      animation: loader-turn linear 1.5s infinite;
+      //&::before {
+      //  //@include pseudo;
+      //  //top: 15px;
+      //  //padding: 100%;
+      //}
+    }
   }
 }
-//
+
 //.spinner {
 //  animation: loader-turn linear infinite;
 //  padding: 1rem;
 //  width: 100%;
 //
-//  @keyframes loader-turn {
-//    50% {
-//      transform: rotate(180deg);
-//    }
-//    100% {
-//      transform: rotate(360deg);
-//    }
-//  }
+
+// G Spinner //
+  @keyframes loader-turn {
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 //}
 
 // The Dot //
@@ -130,8 +141,8 @@ body {
 // Letter I //
 @keyframes letterStretch {
   0%, 100% {
-    transform: scale(1, 0.35);
-    transform-origin: 100% 75%;
+    transform: scale(1, 0.55);
+    transform-origin: 100% 85%;
   }
   8%, 28% {
     transform: scale(1, 2.125);
