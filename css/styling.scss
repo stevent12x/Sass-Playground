@@ -98,8 +98,9 @@ body {
       }
     }
     &:nth-child(7) {
-      transform-origin: 50%;
-      animation: loader-turn linear 1.5s infinite;
+      transform-origin: bottom;
+      animation: loader-turn linear 2.5s infinite;
+
       //&::before {
       //  //@include pseudo;
       //  //top: 15px;
@@ -117,11 +118,38 @@ body {
 
 // G Spinner //
   @keyframes loader-turn {
+    0%, 6% {
+      transform: rotate(5deg);
+    }
+    15%, 35% {
+      transform: rotate(16deg);
+    }
     50% {
-      transform: rotate(180deg);
+      transform: rotate(25deg);
+    }
+    63% {
+      transform: rotate(76deg);
+    }
+    75% {
+      transform: rotate(100deg);
+    }
+    82% {
+      transform: rotate(130deg);
+    }
+    88% {
+      transform: rotate(192deg);
+    }
+    92% {
+      transform: rotate(170deg);
+    }
+    95% {
+      transform: rotate(185deg);
+    }
+    98% {
+      transform: rotate(178deg);
     }
     100% {
-      transform: rotate(360deg);
+      transform: rotate(180deg);
     }
   }
 //}
