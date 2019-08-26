@@ -119,7 +119,7 @@ body {
 // G Spinner //
   @keyframes loader-turn {
     0%, 6% {
-      transform: rotate(5deg);
+      transform: rotate(10deg);
     }
     15%, 35% {
       transform: rotate(16deg);
