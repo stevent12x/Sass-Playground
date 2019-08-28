@@ -88,30 +88,41 @@ body {
 }
 .loading-text .letter:nth-child(7) {
   transform-origin: bottom;
-  animation: loader-turn linear 2.5s infinite;
+  animation: loader-turn linear 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes loader-turn {
-  0%, 6% {
-    transform: rotate(5deg);
+  10% {
+    transform: rotate(10deg);
   }
-  15%, 35% {
+  35% {
     transform: rotate(16deg);
   }
-  50% {
+  40% {
     transform: rotate(25deg);
   }
   63% {
     transform: rotate(76deg);
   }
-  75% {
+  70% {
     transform: rotate(100deg);
   }
-  82% {
+  76% {
     transform: rotate(130deg);
   }
-  88% {
+  80% {
+    transform: rotate(180deg);
+  }
+  83% {
     transform: rotate(192deg);
+  }
+  86% {
+    transform: rotate(172deg);
+  }
+  89% {
+    transform: rotate(188deg);
   }
   92% {
     transform: rotate(170deg);
