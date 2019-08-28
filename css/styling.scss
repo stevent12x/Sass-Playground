@@ -99,7 +99,7 @@ body {
     }
     &:nth-child(7) {
       transform-origin: bottom;
-      animation: loader-turn linear 5s;
+      animation: loader-turn linear 4s;
       animation-iteration-count: 1;
       animation-fill-mode: forwards;
     }
@@ -107,19 +107,16 @@ body {
 }
 // G Spinner //
   @keyframes loader-turn {
-    10% {transform: rotate(10deg);}
-    35% {transform: rotate(16deg);}
-    40% {transform: rotate(25deg);}
-    63% {transform: rotate(76deg);}
-    70% {transform: rotate(100deg);}
-    76% {transform: rotate(130deg);}
-    80% {transform: rotate(180deg);}
-    83% {transform: rotate(192deg);}
-    86% {transform: rotate(172deg);}
-    89% {transform: rotate(188deg);}
-    92% {transform: rotate(170deg);}
-    95% {transform: rotate(185deg);}
-    98% {transform: rotate(178deg);}
+    5% {transform: rotate(8deg);}
+    10% {transform: rotate(42deg)}
+    30% {transform: rotate(89deg);}
+    53% {transform: rotate(148deg)}
+    61% {transform: rotate(198deg)}
+    76% {transform: rotate(216deg);}
+    83% {transform: rotate(172deg);}
+    89% {transform: rotate(204deg);}
+    95% {transform: rotate(178deg);}
+    98% {transform: rotate(195deg);}
     100% {transform: rotate(180deg);}
   }
 // The Dot //
